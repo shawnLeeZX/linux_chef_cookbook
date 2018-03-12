@@ -56,3 +56,19 @@ default['archlinux']['services']['enable'] = [
     'gdm',
     'NetworkManager'
 ]
+
+default['super_users']['name'] = [
+    'shawn'
+]
+
+default['super_users']['config'] = [
+    { 'type': :file, 'name': '.gitconfig'},
+    { 'type': :file, 'name': '.tmux.conf'},
+    { 'type': :git,
+      'name': '.emacs.d',
+      'url': 'https://github.com/shawnLeeZX/emacs.d' },
+    { 'type': :git,
+      'name': '.vim',
+      'url': 'https://github.com/shawnLeeZX/.vim' },
+    { 'type': :file, 'name': '.vimrc'},
+]
