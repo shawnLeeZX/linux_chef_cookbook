@@ -12,6 +12,7 @@ default['archlinux']['packages']['install']['server'] = [
     'mlocate',
     'tree',
     'openssh',
+    'bash-completion',
 
     'ntfs-3g',
     'htop',
@@ -46,6 +47,10 @@ default['archlinux']['packages']['install']['desktop'] = [
     'fcitx-configtool',
 
     'texlive-science',
+
+    'flashplugin',
+
+    'vlc',
 ]
 
 # laptop programs
