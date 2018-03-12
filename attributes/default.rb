@@ -1,6 +1,9 @@
-default['archlinux']['packages']['install'] = [
-    # Server programs
-    'wpa_supplicant',
+# #########################################################################
+# Attributes for package installation.
+# #########################################################################
+
+# Server programs
+default['archlinux']['packages']['install']['server'] = [
     'sudo',
     'tmux',
     'git',
@@ -12,36 +15,40 @@ default['archlinux']['packages']['install'] = [
 
     'ntfs-3g',
     'htop',
+    'nmon',
     'intel-ucode',
     'grub',
     'efibootmgr',
     'os-prober',
-
-    # Desktop programs
-    'onboard',
-    'guake',
-    'terminator',
-    'gnome-tweak-tool',
-    'firefox',
-    'xchm',
-
-    'fcitx-gtk3',
-    'fcitx',
-    'fcitx-configtool',
-
-    'gvim',
-    'variety',
-    'okular',
-
-    'emacs',
 
     # Chinese fonts.
     'adobe-source-han-sans-cn-fonts',
     'adobe-source-han-sans-tw-fonts',
     'adobe-source-han-serif-cn-fonts',
     'adobe-source-han-serif-tw-fonts',
+]
 
-    # laptop programs
+# Desktop programs
+default['archlinux']['packages']['install']['desktop'] = [
+    'onboard',
+    'guake',
+    'terminator',
+    'gnome-tweak-tool',
+    'firefox',
+    'xchm',
+    'gvim',
+    'variety',
+    'okular',
+    'emacs',
+
+    'fcitx-gtk3',
+    'fcitx',
+    'fcitx-configtool',
+]
+
+# laptop programs
+default['archlinux']['packages']['install']['laptop'] = [
+    'wpa_supplicant',
     'powertop',
     'tlp',
     'smartmontools',
@@ -52,10 +59,15 @@ default['archlinux']['package_group']['install'] = [
     'base-devel',
 ]
 
-default['archlinux']['services']['enable'] = [
+default['archlinux']['services']['enable']['desktop'] = [
     'gdm',
     'NetworkManager'
 ]
+
+# #########################################################################
+# Attributes for customizing super users.
+# #########################################################################
+
 
 default['super_users']['name'] = [
     'shawn'
