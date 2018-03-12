@@ -44,6 +44,8 @@ default['archlinux']['packages']['install']['desktop'] = [
     'fcitx-gtk3',
     'fcitx',
     'fcitx-configtool',
+
+    'texlive-science',
 ]
 
 # laptop programs
