@@ -4,7 +4,6 @@
 # end
 
 node['archlinux']['packages']['install'].each_pair do |_, group|
-  puts group
   group.each do |pkg|
     package(pkg) {action :install}
   end
