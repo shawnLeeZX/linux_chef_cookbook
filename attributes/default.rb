@@ -84,6 +84,7 @@ default['super_users']['name'] = [
 default['super_users']['config'] = [
     { 'type': :file, 'name': '.gitconfig'},
     { 'type': :file, 'name': '.tmux.conf'},
+    { 'type': :file, 'name': '.xprofile'},
     { 'type': :git,
       'name': '.emacs.d',
       'url': 'https://github.com/shawnLeeZX/emacs.d' },
