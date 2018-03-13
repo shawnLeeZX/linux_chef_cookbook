@@ -13,6 +13,7 @@ default['archlinux']['packages']['install']['server'] = [
     'tree',
     'openssh',
     'bash-completion',
+    'wget',
 
     'ntfs-3g',
     'htop',
