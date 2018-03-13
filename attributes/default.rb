@@ -14,6 +14,7 @@ default['archlinux']['packages']['install']['server'] = [
     'openssh',
     'bash-completion',
     'wget',
+    'unrar',
 
     'ntfs-3g',
     'htop',
