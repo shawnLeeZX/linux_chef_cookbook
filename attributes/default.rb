@@ -19,7 +19,7 @@ default['archlinux']['packages']['install']['server'] = [
     'ntfs-3g',
     'htop',
     'nmon',
-    'intel-ucode',
+    'intel-ucode', # Update provided by intel for CPUs.
     'grub',
     'efibootmgr',
     'os-prober',
@@ -58,9 +58,19 @@ default['archlinux']['packages']['install']['desktop'] = [
 # laptop programs
 default['archlinux']['packages']['install']['laptop'] = [
     'wpa_supplicant',
+    # Has similar capability with tlp. TLP is used mainly. powertop is mainly
+    # used to monitor.
     'powertop',
     'tlp',
-    'smartmontools',
+    'tlp-rdw', # Radio device wizard for tlp
+    # Enable disable of wake on LAN of tlp.
+    'ethtool',
+    # The following two are thinkpad related tlp feature packages.
+    'tp_smapi',
+    'acpi_call',
+    # For monitoring disk health, the service related to check disk
+    # periodically is not enabled actually.
+    'smartmontools', 
 ]
 
 default['archlinux']['package_group']['install'] = [
@@ -70,7 +80,15 @@ default['archlinux']['package_group']['install'] = [
 
 default['archlinux']['services']['enable']['desktop'] = [
     'gdm',
-    'NetworkManager'
+    'NetworkManager',
+    'NetworkManager-dispatcher',
+    'tlp',
+    'tlp-sleep',
+]
+
+default['archlinux']['services']['disable']['desktop'] = [
+    'systemd-rfkill.service',
+    'systemd-rfkill.socket',
 ]
 
 # #########################################################################
