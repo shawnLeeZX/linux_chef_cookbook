@@ -82,8 +82,15 @@ default['archlinux']['services']['enable']['desktop'] = [
     'gdm',
     'NetworkManager',
     'NetworkManager-dispatcher',
+    # Set up and disable tlp during boot and shutdown.
     'tlp',
+    # Set up and disable tlp on and from suspend and sleep.
     'tlp-sleep',
+    # evoke fstrim service twice a week to issue TRIM command to SSD to tell
+    # which part of the disk is not used anymore.
+    # NOTE: it should not be enabled on machines that does not have a SSD, but
+    # I am not sure to detect it yet.
+    'fstrim.timer', 
 ]
 
 default['archlinux']['services']['disable']['desktop'] = [
