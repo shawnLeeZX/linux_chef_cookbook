@@ -29,6 +29,9 @@ default['archlinux']['packages']['install']['server'] = [
     'adobe-source-han-sans-tw-fonts',
     'adobe-source-han-serif-cn-fonts',
     'adobe-source-han-serif-tw-fonts',
+
+    # spell checker
+    'aspell-en',
 ]
 
 # Desktop programs
