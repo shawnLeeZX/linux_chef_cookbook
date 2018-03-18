@@ -76,6 +76,14 @@ default['archlinux']['packages']['install']['laptop'] = [
     'smartmontools', 
 ]
 
+default['archlinux']['packages']['install']['gpu']['intel'] = [
+    'vulkan-intel', # Vulkan is a low-overhead, cross-platform 3D graphics and compute API. c.f. arch wiki
+    'libva-intel-driver', # Video acceleration by Intel
+    'libvdpau-va-gl', # Video acceleration by NVIDIA
+    'libva-utils', # Tools to check libva
+    'vdpauinfo', # Tools to check libvdpau
+]
+
 default['archlinux']['package_group']['install'] = [
     'gnome',
     'base-devel',
