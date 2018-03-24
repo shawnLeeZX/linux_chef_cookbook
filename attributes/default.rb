@@ -15,6 +15,7 @@ default['archlinux']['packages']['install']['server'] = [
     'bash-completion',
     'wget',
     'unrar',
+    'whois',
 
     'ntfs-3g',
     'htop',
