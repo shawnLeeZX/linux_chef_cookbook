@@ -25,6 +25,8 @@ default['archlinux']['packages']['install']['server'] = [
     'efibootmgr',
     'os-prober',
 
+    # Font
+    'ttf-dejavu', # fonts for english.
     # Chinese fonts.
     'adobe-source-han-sans-cn-fonts',
     'adobe-source-han-sans-tw-fonts',
