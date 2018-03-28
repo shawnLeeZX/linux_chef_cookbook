@@ -35,6 +35,9 @@ default['archlinux']['packages']['install']['server'] = [
 
     # spell checker
     'aspell-en',
+
+    # programming
+    'ctags',
 ]
 
 # Desktop programs
