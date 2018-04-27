@@ -32,6 +32,8 @@ default['archlinux']['packages']['install']['server'] = [
     'adobe-source-han-sans-tw-fonts',
     'adobe-source-han-serif-cn-fonts',
     'adobe-source-han-serif-tw-fonts',
+    # library data to render pdf with Chinese.
+    'poppler-data',
 
     # spell checker
     'aspell-en',
