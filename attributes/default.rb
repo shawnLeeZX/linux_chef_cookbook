@@ -43,6 +43,7 @@ default['archlinux']['packages']['install']['server'] = [
 
     # markdown converter
     'pandoc',
+    'markdown',
 ]
 
 # Desktop programs
