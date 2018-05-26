@@ -52,6 +52,7 @@ default['archlinux']['packages']['install']['desktop'] = [
     'guake',
     'terminator',
     'gnome-tweak-tool',
+    'chrome-gnome-shell',
     'firefox',
     'xchm',
     'gvim',
