@@ -70,6 +70,10 @@ default['archlinux']['packages']['install']['desktop'] = [
     'flashplugin',
 
     'vlc',
+
+    # bluetooth
+    ' bluez',
+    'bluez-utils',
 ]
 
 # laptop programs
