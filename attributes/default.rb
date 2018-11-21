@@ -40,6 +40,7 @@ default['archlinux']['packages']['install']['server'] = [
 
     # programming
     'ctags',
+    'gdb',
 
     # markdown converter
     'pandoc',
