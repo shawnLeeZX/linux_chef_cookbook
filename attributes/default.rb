@@ -61,6 +61,7 @@ default['archlinux']['packages']['install']['desktop'] = [
     'okular',
     'emacs',
     'calibre',
+    'gimp',
 
     'fcitx-gtk3',
     'fcitx',
