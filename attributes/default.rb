@@ -54,6 +54,7 @@ default['archlinux']['packages']['install']['desktop'] = [
     'terminator',
     'gnome-tweak-tool',
     'chrome-gnome-shell',
+    'lightdm',
     'firefox',
     'xchm',
     'gvim',
@@ -110,7 +111,9 @@ default['archlinux']['package_group']['install'] = [
 ]
 
 default['archlinux']['services']['enable']['desktop'] = [
-    'gdm',
+    # gdm will preempt pusleaudio, and make programs that do not access audio
+    # through gnome unusable.
+    'lightdm',
     'NetworkManager',
     'NetworkManager-dispatcher',
     # Set up and disable tlp during boot and shutdown.
