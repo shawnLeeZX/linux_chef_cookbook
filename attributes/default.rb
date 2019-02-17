@@ -16,6 +16,7 @@ default['archlinux']['packages']['install']['server'] = [
     'wget',
     'unrar',
     'whois',
+    'dnsutils',
 
     'ntfs-3g',
     'htop',
@@ -95,6 +96,12 @@ default['archlinux']['packages']['install']['laptop'] = [
     # For monitoring disk health, the service related to check disk
     # periodically is not enabled actually.
     'smartmontools', 
+]
+
+# Python packages.
+default['archlinux']['packages']['install']['python'] = [
+    'python-deprecation',
+    'python-tensorflow',
 ]
 
 default['archlinux']['packages']['install']['gpu']['intel'] = [
